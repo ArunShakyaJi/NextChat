@@ -6,6 +6,7 @@ export default function Component() {
   if (session) {
     return (
       <>
+      console.log("hello you are here")
         Signed in as {session.user.email} <br />
         <button className="bg-blue-500 px-3 py-1 m-4 rounded" onClick={() => signOut()}>Sign out</button>
       </>
